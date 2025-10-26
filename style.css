@@ -1,0 +1,37 @@
+body {
+  background: url('https://i.imgur.com/F7lV1nG.png') center/cover no-repeat;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social img {
+  width: 32px;
+  margin: 8px;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.social img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
