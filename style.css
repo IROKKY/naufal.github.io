@@ -1,3 +1,4 @@
+/* === Background dan layout utama === */
 body {
   background: url('https://i.imgur.com/F7lV1nG.png') center/cover no-repeat;
   font-family: 'Poppins', sans-serif;
@@ -6,18 +7,21 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  margin: 0;
 }
 
+/* === Kartu utama === */
 .card {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 30px;
   text-align: center;
   width: 320px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
+/* === Foto profil === */
 .profile {
   width: 100px;
   height: 100px;
@@ -25,6 +29,17 @@ body {
   object-fit: cover;
 }
 
+/* === Teks === */
+h1 {
+  margin-top: 15px;
+  font-size: 22px;
+}
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* === Ikon sosial === */
 .social img {
   width: 32px;
   margin: 8px;
@@ -34,4 +49,12 @@ body {
 .social img:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+
+/* === Responsif untuk HP === */
+@media (max-width: 500px) {
+  .card {
+    width: 90%;
+    padding: 20px;
+  }
 }
